@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.vadlurivivek.dicerollgame.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer score 0 Your score 0"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvScore"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your turn score 0"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tvTurnScore"/>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="You Won"
+        android:textSize="50sp"
+        android:visibility="gone"
+        android:id="@+id/tvFinalStatement"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivDice"
+        android:layout_below="@+id/tvScore"
+        android:layout_toEndOf="@+id/tvScore"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/dice1"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/roll"
+            android:background="#3F51B5"
+            android:paddingTop="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/btRoll" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#3F51B5"
+            android:paddingTop="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="1dp"
+            android:text="@string/hold"
+            android:id="@+id/btHold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="1dp"
+            android:text="@string/reset"
+
+            android:id="@+id/btReset" />
+    </LinearLayout>
+
+
+</LinearLayout>
